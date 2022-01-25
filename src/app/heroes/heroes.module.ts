@@ -12,6 +12,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { HeroeTargetComponent } from './components/heroe-target/heroe-target.component';
 
+import { HeroePipe } from './pipes/heroe.pipe';
+
 
 
 
@@ -23,7 +25,8 @@ import { HeroeTargetComponent } from './components/heroe-target/heroe-target.com
     HeroeComponent,
     HomeComponent,
     ListComponent,
-    HeroeTargetComponent
+    HeroeTargetComponent,
+    HeroePipe
   ],
   imports: [
     CommonModule,

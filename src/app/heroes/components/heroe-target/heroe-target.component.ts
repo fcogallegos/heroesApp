@@ -1,10 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Heroe } from '../../pages/heroe/interfaces/heroe.interface';
+import { Heroe } from '../../interfaces/heroe.interface';
 
 @Component({
   selector: 'app-heroe-target',
   templateUrl: './heroe-target.component.html',
-  styles: [
+  styles: [`
+  mat-card {
+      margin-top: 20px
+    }
+  `
   ]
 })
 export class HeroeTargetComponent implements OnInit {
