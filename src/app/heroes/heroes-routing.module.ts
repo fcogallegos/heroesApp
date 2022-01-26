@@ -30,7 +30,7 @@ const routes: Routes = [
         component: SearchComponent
       },
       {
-        path: 'id',
+        path: ':id',
         component: HeroeComponent
       },
       {
