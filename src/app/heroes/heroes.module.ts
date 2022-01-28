@@ -13,6 +13,7 @@ import { ListComponent } from './pages/list/list.component';
 import { HeroeTargetComponent } from './components/heroe-target/heroe-target.component';
 
 import { HeroePipe } from './pipes/heroe.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -31,6 +32,7 @@ import { HeroePipe } from './pipes/heroe.pipe';
   imports: [
     CommonModule,
     FlexLayoutModule,
+    FormsModule,
     MaterialModule,
     HeroesRoutingModule
   ]
