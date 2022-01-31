@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule  } from "@angular/material/form-field";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatGridListModule } from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -28,7 +29,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

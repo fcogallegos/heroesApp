@@ -5,10 +5,10 @@
         <h1>Search Heroes</h1>
         <mat-divider></mat-divider>
     </div>
-    <div>
-        <h3>Search</h3>
+
+    <div fxLayout="column">
         <mat-form-field>
-            <mat-label>Number</mat-label>
+            <mat-label>Searcher</mat-label>
             <input type="text"
                    placeholder="Pick one"
                    aria-label="Number"
@@ -21,14 +21,23 @@
             <mat-autocomplete autoActiveFirstOption 
                               #auto="matAutocomplete"
                               (optionSelected)="optionSelected( $event )">
+
               <mat-option *ngFor="let heroe of heroes " [value]="heroe">
                 {{ heroe.superhero }}
               </mat-option>
+
+              <mat-option value="" *ngIf="heroes.length === 0 && term.trim().length > 0">
+                  Nothing found with the term {{ term }}
+              </mat-option>
+
             </mat-autocomplete>
         </mat-form-field>
 
         <div>
             <pre>{{ heroeSelected | json }}</pre>
+        </div>
+        <div *ngIf="heroeSelected">
+            <app-heroe-target [heroe]="heroeSelected" ></app-heroe-target>
         </div>
 
     </div>
