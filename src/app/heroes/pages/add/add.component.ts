@@ -56,7 +56,7 @@ export class AddComponent implements OnInit {
 
   }
 
-  save() {
+  saveHeroe() {
     if( this.heroe.superhero.trim().length === 0 ) {
       return;
     } 
@@ -72,6 +72,16 @@ export class AddComponent implements OnInit {
         this.router.navigate(['/heroes/edit', heroe.id]);
       })
     }
+  }
+
+  deleteHeroe() {
+    
+    this.heroesService.deleteHeroe( this.heroe.id! )
+      .subscribe( resp => {
+        
+        this.router.navigate(['/heroes']);
+
+      })
   }
 
 }
