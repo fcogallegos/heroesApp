@@ -14,6 +14,7 @@ import { HeroeTargetComponent } from './components/heroe-target/heroe-target.com
 
 import { HeroePipe } from './pipes/heroe.pipe';
 import { FormsModule } from '@angular/forms';
+import { ConfirmComponent } from './components/confirm/confirm.component';
 
 
 
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ListComponent,
     HeroeTargetComponent,
-    HeroePipe
+    HeroePipe,
+    ConfirmComponent
   ],
   imports: [
     CommonModule,
